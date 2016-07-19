@@ -69,7 +69,7 @@ var GitlabTree = (function($){
 
     // 处理右侧gitlab的宽度
     var hackStyle = function() {
-        if (location.href.indexOf('gitlab.com') > -1) {
+        if (location.href.indexOf('git.kongge.com') > -1) {
             $('.sidebar-wrapper').hide();
             $('.gitlab-tree').css('width', '230px');
             $('header.navbar').css('margin-left', '230px');
