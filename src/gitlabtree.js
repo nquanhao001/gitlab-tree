@@ -69,7 +69,7 @@ var GitlabTree = (function($){
 
     // 处理右侧gitlab的宽度
     var hackStyle = function() {
-        if (location.href.indexOf('git.kongge.com') > -1) {
+        if (location.href.indexOf('git.kongge') > -1) {
             $('.sidebar-wrapper').hide();
             $('.gitlab-tree').css('width', '230px');
             $('header.navbar').css('margin-left', '230px');
@@ -329,7 +329,8 @@ var GitlabTree = (function($){
         path = revertPath(path);
 
         // http://gitlab.xxx.cn /   mobile/m-web           /blob/   master            /     src/main/webapp/resource/loader.js
-        var href = originUrl + '/' + path_with_namespace + '/blob/' + repository_ref + '/' + path;
+        var href = originUrl + '/' + path_with_namespace +  repository_ref + '/' + path;
+        console(href);
 
         return href;
     }
